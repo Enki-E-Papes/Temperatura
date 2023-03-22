@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/StileNeve.css')}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>conversione temperatura</h1>
+    <form action = "/conversione" method = "get">
+
+      <p>inserisci la temperatura da convertire:</p>
+
+      <p><input type = "text" name = "temp" /></p> 
+
+      <p>Scegli come convertire il tuo numero</p> 
+
+      <input type="radio" id='Celsius'name="primo" value="0">
+      <label for="Celsius">Celsius - Fahrenheit</label><br>
+
+      <input type="radio" id="Fahrenheit" name="primo" value="1">
+      <label for="Fahrenheit">Fahrenheit - Celsius</label><br>
+
+      <input type="radio" id="Kelvin" name="primo" value="2">
+      <label for="Kelvin">Celsius - Kelvin</label>
+      
+      <p><input type = "submit" value = "submit" /></p>
+    </form>
+</body>
+</html>
